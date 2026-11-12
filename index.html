@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b46">
+  <title>Biblioteca de artículos científicos</title>
+
+  <style>
+    :root {
+      --navy: #102b46;
+      --blue: #1d5278;
+      --teal: #21b6ad;
+      --paper: #f3f7fa;
+      --ink: #203244;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: white;
+      padding: 52px 20px 44px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #9ee9e3;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 12px auto 10px;
+      max-width: 760px;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.12;
+    }
+
+    header p {
+      margin: 0 auto;
+      max-width: 620px;
+      color: #e2edf5;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 34px auto 54px;
+    }
+
+    .intro {
+      margin-bottom: 22px;
+    }
+
+    .intro h2 {
+      color: var(--navy);
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .intro p {
+      margin: 0;
+      color: #526577;
+      line-height: 1.55;
+    }
+
+    .article {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      background: white;
+      border: 1px solid #e0e9ef;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 14px 0;
+      box-shadow: 0 5px 18px rgba(16,43,70,.05);
+    }
+
+    .article-num {
+      flex: 0 0 42px;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      background: #e5f5f4;
+      font-weight: bold;
+    }
+
+    .article-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .article h3 {
+      margin: 0 0 7px;
+      color: var(--navy);
+      font-size: 16px;
+    }
+
+    .article p {
+      margin: 0;
+      color: #667989;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .link {
+      flex: 0 0 auto;
+      text-decoration: none;
+      background: var(--teal);
+      color: #062f35;
+      font-weight: bold;
+      padding: 11px 15px;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+
+    .link:hover {
+      filter: brightness(.95);
+    }
+
+    footer {
+      text-align: center;
+      padding: 0 20px 30px;
+      color: #718393;
+      font-size: 12px;
+    }
+
+    @media(max-width: 600px) {
+      .article {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .article-info {
+        flex-basis: calc(100% - 60px);
+      }
+
+      .link {
+        margin-left: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="eyebrow">
+      Recursos académicos · Medicina
+    </div>
+
+    <h1>Biblioteca de artículos científicos</h1>
+
+    <p>
+      Un espacio de consulta con publicaciones
+      científicas seleccionadas. Abre cada artículo
+      mediante su enlace DOI.
+    </p>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h2>Artículos disponibles</h2>
+      <p>
+        Selecciona "Consultar artículo" para acceder
+        a la publicación correspondiente.
+      </p>
+    </section>
+
+    <article class="article">
+      <div class="article-num">01</div>
+      <div class="article-info">
+        <h3>Artículo científico 1</h3>
+        <p>DOI: 10.3390/jcm11071787</p>
+      </div>
+      <a class="link"
+         href="https://doi.org/10.3390/jcm11071787"
+         target="_blank" rel="noopener noreferrer">
+        Consultar artículo ↗
+      </a>
+    </article>
+
+    <article class="article">
+      <div class="article-num">02</div>
+      <div class="article-info">
+        <h3>Artículo científico 2</h3>
+        <p>DOI: 10.3390/antiox10030405</p>
+      </div>
+      <a class="link"
+         href="https://doi.org/10.3390/antiox10030405"
+         target="_blank" rel="noopener noreferrer">
+        Consultar artículo ↗
+      </a>
+    </article>
+
+    <article class="article">
+      <div class="article-num">03</div>
+      <div class="article-info">
+        <h3>Artículo científico 3</h3>
+        <p>DOI: 10.3390/biology10101032</p>
+      </div>
+      <a class="link"
+         href="https://doi.org/10.3390/biology10101032"
+         target="_blank" rel="noopener noreferrer">
+        Consultar artículo ↗
+      </a>
+    </article>
+
+    <article class="article">
+      <div class="article-num">04</div>
+      <div class="article-info">
+        <h3>Artículo científico 4</h3>
+        <p>DOI: 10.1016/j.celrep.2021.109478</p>
+      </div>
+      <a class="link"
+         href="https://doi.org/10.1016/j.celrep.2021.109478"
+         target="_blank" rel="noopener noreferrer">
+        Consultar artículo ↗
+      </a>
+    </article>
+
+    <article class="article">
+      <div class="article-num">05</div>
+      <div class="article-info">
+        <h3>Artículo científico 5</h3>
+        <p>DOI: 10.1002/med.21712</p>
+      </div>
+      <a class="link"
+         href="https://doi.org/10.1002/med.21712"
+         target="_blank" rel="noopener noreferrer">
+        Consultar artículo ↗
+      </a>
+    </article>
+
+  </main>
+
+  <footer>
+    Biblioteca de artículos científicos ·
+    Material de consulta académica
+  </footer>
+
+</body>
+</html>
